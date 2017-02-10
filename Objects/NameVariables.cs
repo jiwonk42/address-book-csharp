@@ -44,7 +44,7 @@ namespace AddressBook.Objects
       return _contact;
     }
 
-    public static void Clear()
+    public static void ClearAll()
     {
       _contact.Clear();
     }

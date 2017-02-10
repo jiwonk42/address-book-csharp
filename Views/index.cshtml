@@ -2,7 +2,7 @@
 <ul>
   @foreach (var contact in Model)
   {
-    <li>@contact.GetName()</li>
+    <li><a href="contact/{id}">@contact.GetName()</a></li>
   }
 </ul>
 

@@ -30,7 +30,7 @@ namespace AddressBook
         return View["new-contact.cshtml", contact];
       };
 
-      Get["/contacts/{id}"] = parameters =>
+      Get["/contact/{id}"] = parameters =>
       {
         Contact person = Contact.Find(parameters.id);
         return View["contact-detail.cshtml", person];
@@ -38,6 +38,7 @@ namespace AddressBook
 
       Post["/contacts/clear"] = _ =>
       {
+        Contact.ClearAll();
         return View["clear-all.cshtml"];
       };
     }
