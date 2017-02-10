@@ -1,15 +1,17 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
-<h1>Address Book</h1>
-<h1>"You created a contact!"</h1>
-<p>
-  Name: @Model.GetName()
-</p>
-<p>
-  Phone: @Model.GetPhone()
-</p>
-<p>
-  Address:@Model.GetAddress()
-</p>
-<a href="/">Go to Home</a>
+
+<h2>You created a contact!</h2>
+<h3>
+  Name: <span>@Model.GetName()</span>
+</h3>
+<h3>
+  Phone: <span>@Model.GetPhone()</span>
+</h3>
+<h3>
+  Address: <span>@Model.GetAddress()</span>
+</h3>
+<div class="homepage">
+  <h4><a href="/">Back to Home Page</a></h4>
+</div>

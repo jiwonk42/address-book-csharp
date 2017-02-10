@@ -54,6 +54,17 @@ h2 {
   padding-bottom: 30px;
 }
 
+span {
+  font-weight: bold;
+}
+a {
+  margin-top: 10px;
+}
+
 div.address {
   padding-bottom: 20px;
+}
+
+div.homepage {
+  padding-top: 20px;
 }
