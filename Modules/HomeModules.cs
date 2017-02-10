@@ -14,15 +14,9 @@ namespace AddressBook
         return View["index.cshtml", allContacts];
       };
 
-      Get["/contact/detail"] = _ =>
-      {
-        return View["contact-detail.cshtml"];
-      };
+      Get["/contact/detail"] = _ => View["contact-detail.cshtml"];
 
-      Get["/contact/form"] = _ =>
-      {
-        return View["contact-form.cshtml"];
-      };
+      Get["/contact/form"] = _ => View["contact-form.cshtml"];
 
       Post["/contact/new"] = _ =>
       {
