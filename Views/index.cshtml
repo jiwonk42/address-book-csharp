@@ -1,8 +1,18 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
-sdf
-<div>
+
+<div class="buttons">
+  <form action="/contact/form">
+    <button type="submit" class="btn">Add New</button>
+  </form>
+
+  <form action="/contacts/clear" method="post">
+    <button type="submit" class="btn">Clear All</button>
+  </form>
+</div>
+
+<div class="contacts">
   <ul>
     @foreach (var contact in Model)
     {
@@ -10,8 +20,3 @@ sdf
     }
   </ul>
 </div>
-
-<a href="/contact/form">Add a new contact</a>
-<form action="/contacts/clear" method="post">
-  <button type="submit" class="btn">Clear All</button>
-</form>
