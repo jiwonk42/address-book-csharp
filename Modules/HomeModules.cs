@@ -16,8 +16,13 @@ namespace AddressBook
       {
         return View["contact-form.cshtml"];
       };
-      Post["/contact/new"] = _ => {
+      Post["/contact/new"] = _ =>
+      {
         return View["new-contact.cshtml"];
+      };
+      Post["/contacts/clear"] = _ =>
+      {
+        return View["clear-all.cshtml"];
       };
     }
   }
