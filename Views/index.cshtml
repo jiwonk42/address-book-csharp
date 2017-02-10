@@ -1,16 +1,17 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
-<h1>Contacts</h1>
-
-<ul>
-  @foreach (var contact in Model)
-  {
-    <li><a href="contact/@contact.GetId()">@contact.GetName()</a></li>
-  }
-</ul>
+sdf
+<div>
+  <ul>
+    @foreach (var contact in Model)
+    {
+      <li><a href="contact/@contact.GetId()">@contact.GetName()</a></li>
+    }
+  </ul>
+</div>
 
 <a href="/contact/form">Add a new contact</a>
 <form action="/contacts/clear" method="post">
-  <button type="submit">Clear All</button>
+  <button type="submit" class="btn">Clear All</button>
 </form>
