@@ -18,5 +18,40 @@ namespace AddressBook.Objects
       _contact.Add(this);
       _id = _contact.Count;
     }
+
+    public string GetName()
+    {
+      return _name;
+    }
+
+    public string GetPhone()
+    {
+      return _phone;
+    }
+
+    public string GetAddress()
+    {
+      return _address;
+    }
+
+    public int GetId()
+    {
+      return _id;
+    }
+
+    public static List<Contact> GetAll()
+    {
+      return _contact;
+    }
+
+    public static void Clear()
+    {
+      _contact.Clear();
+    }
+
+    public static Contact Find(int id)
+    {
+      return _contact[id - 1];
+    }
   }
 }
