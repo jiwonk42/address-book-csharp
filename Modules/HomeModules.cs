@@ -11,6 +11,9 @@ namespace AddressBook
       Get["/"] = _ => {
         return View["index.cshtml"];
       };
+      Get["/contact"] = _ => {
+        return View["contact-form.cshtml"];
+      };
     }
   }
 }
