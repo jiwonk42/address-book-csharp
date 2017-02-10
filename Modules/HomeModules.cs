@@ -8,11 +8,16 @@ namespace AddressBook
   {
     public HomeModule()
     {
-      Get["/"] = _ => {
+      Get["/"] = _ =>
+      {
         return View["index.cshtml"];
       };
-      Get["/contact"] = _ => {
+      Get["/contact"] = _ =>
+      {
         return View["contact-form.cshtml"];
+      };
+      Post["/contact/new"] = _ => {
+        return View["new-contact.cshtml"];
       };
     }
   }
