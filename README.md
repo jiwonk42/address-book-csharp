@@ -16,7 +16,7 @@
 * Clone this repository
 * Open index.html with a web browser
 
-### Link: [Click here](https://jiwonk42.github.io/address-book-csharp/)
+### Link: [Click here](https://jiwonk42.github.io/Views/address-book-csharp/)
 
 #### Copyright (c) 2017 Gee (Jiwon) Kang.
 #### This software is licensed under the MIT license.
